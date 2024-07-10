@@ -13,9 +13,7 @@
            padding: 20px;
        }
 
-       h1 {
-           color: #333;
-       }
+   
 
        table {
            width: 100%;
