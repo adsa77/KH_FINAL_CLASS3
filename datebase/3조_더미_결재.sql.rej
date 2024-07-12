@@ -1,0 +1,13 @@
+diff a/datebase/3조_더미_결재.sql b/datebase/3조_더미_결재.sql	(rejected hunks)
+@@ -1544,9 +1544,10 @@
+   v_work_time TIMESTAMP;
+   v_quit_time TIMESTAMP;
+   v_random_minute PLS_INTEGER;
+-  v_random_interval INTERVAL DAY TO SECOND; -- INTERVAL�� ������ ����
++  v_random_interval INTERVAL DAY TO SECOND;
+   
+ BEGIN
++  -- 7�� 1�Ϻ��� 12�ϱ����� ������ ����
+   FOR day IN 1..12 LOOP
+     v_work_time := TO_TIMESTAMP('2024-07-' || TO_CHAR(day, 'FM00') || ' ' || 
+                   TO_CHAR(FLOOR(DBMS_RANDOM.VALUE(6, 10)), 'FM00') || ':' || 
